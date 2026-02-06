@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Care Strategies — Evidence-Based Mental Wellness Practices</title>
+    <meta name="description" content="Evidence-based self-care strategies for mental health including exercise, sleep hygiene, mindfulness, and stress management techniques backed by research.">
+    <link rel="canonical" href="https://mental.md/self-care.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%235b21b6' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #7c3aed;
+            --accent-dark: #5b21b6;
+            --accent-light: #ede9fe;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .logo span { color: var(--accent); }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--accent); }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 120px 24px 64px;
+        }
+        .page-header {
+            margin-bottom: 48px;
+        }
+        .page-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .page-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 48px;
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        h3 {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+        p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        .practice-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+        .practice-card h3 {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .practice-card .icon {
+            font-size: 28px;
+        }
+        .practice-card p:last-child {
+            margin-bottom: 0;
+        }
+        .evidence-badge {
+            display: inline-block;
+            background: var(--accent-light);
+            color: var(--accent-dark);
+            padding: 4px 12px;
+            border-radius: 100px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .tip-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin: 24px 0;
+        }
+        .tip-card {
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+            padding: 16px;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        .tip-card strong {
+            display: block;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+        .info-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            font-size: 17px;
+        }
+        .info-box p {
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        .warning-box {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-left: 4px solid #ef4444;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .warning-box h3 {
+            color: #991b1b;
+            margin-top: 0;
+            font-size: 17px;
+        }
+        .warning-box p {
+            color: #7f1d1d;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+            margin-top: 80px;
+        }
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            main { padding: 100px 16px 40px; }
+            .tip-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">mental<span>.md</span></a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/conditions.html">Conditions</a>
+                <a href="/therapy.html">Therapy</a>
+                <a href="/self-care.html">Self-Care</a>
+                <a href="/crisis.html">Crisis Help</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="page-eyebrow">Wellness Practices</div>
+            <h1>Evidence-Based Self-Care</h1>
+            <p class="page-subtitle">Self-care isn't selfish—it's essential. These research-backed practices can support your mental health alongside professional treatment, or help maintain wellness.</p>
+        </div>
+
+        <div class="warning-box">
+            <h3>⚠️ Self-Care ≠ Treatment</h3>
+            <p>While self-care practices support mental wellness, they're not a replacement for professional treatment when you have a mental health condition. If you're struggling, please seek help from a mental health provider.</p>
+        </div>
+
+        <section class="section">
+            <div class="practice-card">
+                <h3><span class="icon">🏃</span> Physical Activity</h3>
+                <span class="evidence-badge">Strong Evidence</span>
+                <p>Exercise is one of the most powerful tools for mental health. It releases endorphins, reduces cortisol, promotes neuroplasticity, and improves sleep. Research shows it can be as effective as antidepressants for mild to moderate depression.</p>
+                
+                <h3>What Works</h3>
+                <ul>
+                    <li><strong>Aerobic exercise:</strong> 30 minutes of moderate activity (brisk walking, cycling, swimming) most days</li>
+                    <li><strong>Strength training:</strong> 2-3 sessions per week has independent mental health benefits</li>
+                    <li><strong>Yoga:</strong> Combines movement with mindfulness; particularly helpful for anxiety</li>
+                    <li><strong>Any movement counts:</strong> Start where you are. Even 10-minute walks help.</li>
+                </ul>
+                
+                <div class="info-box">
+                    <h3>💡 Getting Started</h3>
+                    <p>When you're depressed, starting exercise feels impossible. The trick: start absurdly small. Commit to putting on your shoes. Walk to the end of the block. Build from there. The hardest part is starting.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="practice-card">
+                <h3><span class="icon">😴</span> Sleep Hygiene</h3>
+                <span class="evidence-badge">Strong Evidence</span>
+                <p>Sleep and mental health are bidirectional—poor sleep worsens mental health, and mental health conditions disrupt sleep. Improving sleep hygiene can significantly improve mood, anxiety, and cognitive function.</p>
+                
+                <h3>Sleep Hygiene Practices</h3>
+                <div class="tip-grid">
+                    <div class="tip-card">
+                        <strong>Consistent Schedule</strong>
+                        Go to bed and wake up at the same time every day, including weekends.
+                    </div>
+                    <div class="tip-card">
+                        <strong>Dark, Cool Room</strong>
+                        65-68°F (18-20°C) is optimal. Use blackout curtains or an eye mask.
+                    </div>
+                    <div class="tip-card">
+                        <strong>No Screens Before Bed</strong>
+                        Blue light suppresses melatonin. Stop screens 1 hour before sleep.
+                    </div>
+                    <div class="tip-card">
+                        <strong>Limit Caffeine</strong>
+                        No caffeine after 2 PM. It has a 6-hour half-life.
+                    </div>
+                    <div class="tip-card">
+                        <strong>Reserve Bed for Sleep</strong>
+                        Don't work, scroll, or watch TV in bed. Train your brain that bed = sleep.
+                    </div>
+                    <div class="tip-card">
+                        <strong>Wind-Down Routine</strong>
+                        30-60 minutes of calming activities before bed (reading, stretching, bath).
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="practice-card">
+                <h3><span class="icon">🧘</span> Mindfulness & Meditation</h3>
+                <span class="evidence-badge">Strong Evidence</span>
+                <p>Mindfulness meditation has robust evidence for reducing anxiety, depression, and stress. It trains attention and cultivates non-judgmental awareness of the present moment.</p>
+                
+                <h3>Getting Started</h3>
+                <ul>
+                    <li><strong>Start with 5 minutes:</strong> Use apps like Headspace, Calm, or Insight Timer for guided practice</li>
+                    <li><strong>Focus on breath:</strong> Notice the sensation of breathing. When your mind wanders (it will), gently return attention to breath</li>
+                    <li><strong>Body scan:</strong> Systematically notice sensations in each part of your body</li>
+                    <li><strong>Informal mindfulness:</strong> Bring full attention to daily activities (eating, walking, showering)</li>
+                </ul>
+                
+                <p><strong>Key insight:</strong> The goal isn't to stop thoughts—it's to notice them without getting caught up in them. Each time you notice your mind has wandered and return to breath, you're building the "muscle" of attention.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="practice-card">
+                <h3><span class="icon">👥</span> Social Connection</h3>
+                <span class="evidence-badge">Strong Evidence</span>
+                <p>Humans are social creatures. Loneliness is a major risk factor for depression and anxiety, while strong social connections are protective. Quality matters more than quantity.</p>
+                
+                <h3>Nurturing Connection</h3>
+                <ul>
+                    <li><strong>Schedule social time:</strong> When you're struggling, social withdrawal feels easier. Put connection in your calendar.</li>
+                    <li><strong>Quality over quantity:</strong> One deep conversation beats 10 surface-level interactions</li>
+                    <li><strong>Join a group:</strong> Classes, clubs, volunteer work, support groups—shared activities build connection</li>
+                    <li><strong>Small interactions count:</strong> Chat with neighbors, baristas, coworkers. Brief positive interactions boost mood.</li>
+                    <li><strong>Reach out when struggling:</strong> Isolation reinforces depression. Let people in.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="practice-card">
+                <h3><span class="icon">🍎</span> Nutrition</h3>
+                <span class="evidence-badge">Moderate Evidence</span>
+                <p>The gut-brain connection is real. Diet affects mental health through inflammation, the microbiome, and neurotransmitter production. Mediterranean-style diets are associated with lower depression rates.</p>
+                
+                <h3>Mental Health-Supporting Foods</h3>
+                <ul>
+                    <li><strong>Omega-3 fatty acids:</strong> Fatty fish (salmon, sardines), walnuts, flaxseed</li>
+                    <li><strong>Fermented foods:</strong> Yogurt, kefir, sauerkraut, kimchi (support gut microbiome)</li>
+                    <li><strong>Leafy greens:</strong> Rich in folate, which is linked to mood regulation</li>
+                    <li><strong>Whole grains:</strong> Steady blood sugar supports stable mood</li>
+                    <li><strong>Limit ultra-processed foods:</strong> Associated with increased depression risk</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="practice-card">
+                <h3><span class="icon">📝</span> Journaling</h3>
+                <span class="evidence-badge">Moderate Evidence</span>
+                <p>Expressive writing helps process emotions and gain perspective. Regular journaling is associated with reduced symptoms of depression and anxiety, and improved immune function.</p>
+                
+                <h3>Journaling Approaches</h3>
+                <ul>
+                    <li><strong>Free writing:</strong> Write without stopping for 10-20 minutes. Don't censor yourself.</li>
+                    <li><strong>Gratitude journaling:</strong> List 3 things you're grateful for each day (research shows mood benefits)</li>
+                    <li><strong>Worry dump:</strong> Write out all your worries before bed to clear your mind</li>
+                    <li><strong>CBT-style:</strong> Record situations, automatic thoughts, and alternative perspectives</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="practice-card">
+                <h3><span class="icon">🌳</span> Nature Exposure</h3>
+                <span class="evidence-badge">Moderate Evidence</span>
+                <p>Time in nature reduces cortisol, blood pressure, and rumination while improving mood and attention. Even 20 minutes in a park has measurable effects.</p>
+                
+                <h3>Ways to Get Nature</h3>
+                <ul>
+                    <li>Walk in a park instead of on city streets</li>
+                    <li>Eat lunch outside</li>
+                    <li>Weekend hikes or nature walks</li>
+                    <li>Bring plants into your home and workspace</li>
+                    <li>Look out a window at trees (yes, even this helps)</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="info-box">
+            <h3>🎯 Start Small, Build Habits</h3>
+            <p>Don't try to overhaul your life overnight. Pick one practice that resonates with you. Do it for 5 minutes. Build consistency before intensity. Small daily actions compound into significant change over time.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>© 2026 mental.md · Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
+            <p style="margin-top: 8px; font-size: 12px;">Self-care supports but doesn't replace professional mental health treatment. If you're in crisis, call 988.</p>
+        </div>
+    </footer>
+</body>
+</html>

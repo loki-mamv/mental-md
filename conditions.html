@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Conditions — Depression, Anxiety, PTSD & More</title>
+    <meta name="description" content="Evidence-based guide to common mental health conditions including depression, anxiety disorders, PTSD, bipolar disorder, and more. Learn about symptoms, causes, and treatment options.">
+    <link rel="canonical" href="https://mental.md/conditions.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%235b21b6' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #7c3aed;
+            --accent-dark: #5b21b6;
+            --accent-light: #ede9fe;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .logo span { color: var(--accent); }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--accent); }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 120px 24px 64px;
+        }
+        .page-header {
+            margin-bottom: 48px;
+        }
+        .page-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .page-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 48px;
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        h3 {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+        p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        .condition-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+        .condition-card h3 {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .condition-card .icon {
+            font-size: 24px;
+        }
+        .condition-card p:last-child {
+            margin-bottom: 0;
+        }
+        .symptom-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px 24px;
+            margin: 16px 0;
+        }
+        .symptom-list li {
+            font-size: 15px;
+            color: var(--text-secondary);
+        }
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .info-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            font-size: 17px;
+        }
+        .info-box p {
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin: 24px 0;
+        }
+        .stats-row .stat {
+            text-align: center;
+            padding: 16px;
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+        }
+        .stats-row .stat-number {
+            font-family: var(--font-display);
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        .stats-row .stat-label {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+            margin-top: 80px;
+        }
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            main { padding: 100px 16px 40px; }
+            .symptom-list { grid-template-columns: 1fr; }
+            .stats-row { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">mental<span>.md</span></a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/conditions.html">Conditions</a>
+                <a href="/therapy.html">Therapy</a>
+                <a href="/self-care.html">Self-Care</a>
+                <a href="/crisis.html">Crisis Help</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="page-eyebrow">Conditions Guide</div>
+            <h1>Understanding Mental Health Conditions</h1>
+            <p class="page-subtitle">Mental health conditions are common, treatable medical conditions that affect mood, thinking, and behavior. Learning about these conditions is an important step toward understanding and recovery.</p>
+        </div>
+
+        <section class="section">
+            <h2>Depression</h2>
+            <div class="condition-card">
+                <h3><span class="icon">😔</span> Major Depressive Disorder (MDD)</h3>
+                <p>Depression is more than feeling sad—it's a persistent condition that affects how you feel, think, and handle daily activities. To be diagnosed, symptoms must be present most of the day, nearly every day, for at least two weeks.</p>
+                
+                <h3>Common Symptoms</h3>
+                <ul class="symptom-list">
+                    <li>Persistent sad or empty mood</li>
+                    <li>Loss of interest in activities</li>
+                    <li>Changes in appetite or weight</li>
+                    <li>Sleep disturbances</li>
+                    <li>Fatigue or loss of energy</li>
+                    <li>Difficulty concentrating</li>
+                    <li>Feelings of worthlessness or guilt</li>
+                    <li>Thoughts of death or suicide</li>
+                </ul>
+                
+                <div class="stats-row">
+                    <div class="stat">
+                        <div class="stat-number">280M+</div>
+                        <div class="stat-label">People affected globally</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">70-80%</div>
+                        <div class="stat-label">Respond to treatment</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">21M</div>
+                        <div class="stat-label">U.S. adults annually</div>
+                    </div>
+                </div>
+                
+                <p><strong>Treatment:</strong> Depression is highly treatable. Options include psychotherapy (especially CBT), antidepressant medications (SSRIs, SNRIs), or a combination. Exercise, light therapy, and lifestyle changes also help.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Anxiety Disorders</h2>
+            <p>Anxiety disorders are the most common mental health conditions, affecting over 40 million U.S. adults. They involve excessive worry or fear that interferes with daily functioning.</p>
+            
+            <div class="condition-card">
+                <h3><span class="icon">😰</span> Generalized Anxiety Disorder (GAD)</h3>
+                <p>Excessive, uncontrollable worry about everyday matters (health, work, relationships) occurring more days than not for at least 6 months.</p>
+                <p><strong>Key symptoms:</strong> Restlessness, muscle tension, sleep problems, difficulty concentrating, irritability, fatigue.</p>
+            </div>
+            
+            <div class="condition-card">
+                <h3><span class="icon">💓</span> Panic Disorder</h3>
+                <p>Recurrent, unexpected panic attacks—sudden periods of intense fear with physical symptoms like racing heart, sweating, trembling, and feeling of doom. Fear of future attacks often develops.</p>
+                <p><strong>Treatment:</strong> CBT (especially exposure therapy), SSRIs, and learning to manage panic symptoms. Most people improve significantly with treatment.</p>
+            </div>
+            
+            <div class="condition-card">
+                <h3><span class="icon">👥</span> Social Anxiety Disorder</h3>
+                <p>Intense fear of social situations due to concerns about being judged, embarrassed, or humiliated. Often leads to avoidance of social interactions.</p>
+                <p><strong>Key insight:</strong> Different from shyness—social anxiety causes significant distress and impairment. Affects about 7% of adults.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Trauma & Stress-Related Disorders</h2>
+            
+            <div class="condition-card">
+                <h3><span class="icon">💭</span> Post-Traumatic Stress Disorder (PTSD)</h3>
+                <p>Develops after experiencing or witnessing a traumatic event. Not everyone who experiences trauma develops PTSD—about 6% of the population will have PTSD at some point.</p>
+                
+                <h3>Four Symptom Clusters</h3>
+                <ul>
+                    <li><strong>Intrusion:</strong> Flashbacks, nightmares, distressing memories</li>
+                    <li><strong>Avoidance:</strong> Avoiding reminders of the trauma</li>
+                    <li><strong>Negative changes:</strong> In mood and thinking (guilt, detachment, negative beliefs)</li>
+                    <li><strong>Arousal:</strong> Hypervigilance, startle response, sleep problems, irritability</li>
+                </ul>
+                
+                <p><strong>Effective treatments:</strong> Trauma-focused CBT, Prolonged Exposure (PE), Cognitive Processing Therapy (CPT), and EMDR all have strong evidence. Medication can help manage symptoms.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Bipolar Disorder</h2>
+            
+            <div class="condition-card">
+                <h3><span class="icon">🎭</span> Bipolar I & II</h3>
+                <p>Bipolar disorder involves extreme mood episodes—periods of mania (or hypomania) and depression. It's a lifelong condition that can be effectively managed with treatment.</p>
+                
+                <h3>Manic Episode Signs</h3>
+                <ul>
+                    <li>Decreased need for sleep (feeling rested after 3 hours)</li>
+                    <li>Racing thoughts, rapid speech</li>
+                    <li>Inflated self-esteem or grandiosity</li>
+                    <li>Increased goal-directed activity</li>
+                    <li>Risky behavior (spending sprees, sexual indiscretions)</li>
+                </ul>
+                
+                <div class="info-box">
+                    <h3>Bipolar I vs. Bipolar II</h3>
+                    <p><strong>Bipolar I:</strong> Full manic episodes (may require hospitalization) with or without depressive episodes.<br>
+                    <strong>Bipolar II:</strong> Hypomanic episodes (less severe) with major depressive episodes. Depression is often the predominant concern.</p>
+                </div>
+                
+                <p><strong>Treatment:</strong> Mood stabilizers (lithium, valproate), atypical antipsychotics, and psychotherapy. Consistent medication is essential—stopping during stable periods often leads to relapse.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Other Common Conditions</h2>
+            
+            <div class="condition-card">
+                <h3><span class="icon">🔄</span> Obsessive-Compulsive Disorder (OCD)</h3>
+                <p>Characterized by unwanted, intrusive thoughts (obsessions) and repetitive behaviors or mental acts (compulsions) performed to reduce anxiety. Affects about 2.5% of adults.</p>
+                <p><strong>Treatment:</strong> Exposure and Response Prevention (ERP) is the gold standard. SSRIs at higher doses can also be effective.</p>
+            </div>
+            
+            <div class="condition-card">
+                <h3><span class="icon">⚡</span> ADHD (Attention-Deficit/Hyperactivity Disorder)</h3>
+                <p>Neurodevelopmental disorder involving persistent inattention, hyperactivity, and impulsivity that interferes with functioning. Often continues into adulthood.</p>
+                <p><strong>Treatment:</strong> Stimulant medications (methylphenidate, amphetamines) are highly effective. Behavioral strategies, coaching, and accommodations also help.</p>
+            </div>
+            
+            <div class="condition-card">
+                <h3><span class="icon">🍽️</span> Eating Disorders</h3>
+                <p>Serious conditions involving disturbed eating behaviors and related thoughts/emotions. Includes anorexia nervosa, bulimia nervosa, and binge eating disorder.</p>
+                <p><strong>Key point:</strong> Eating disorders have the highest mortality rate of any mental illness. Early intervention improves outcomes significantly.</p>
+            </div>
+        </section>
+
+        <div class="info-box">
+            <h3>💡 Getting a Diagnosis</h3>
+            <p>Only qualified mental health professionals can diagnose mental health conditions. If you recognize yourself in these descriptions, consider scheduling an evaluation with a psychiatrist, psychologist, or your primary care doctor. Self-diagnosis from online information isn't reliable—but seeking help is always the right choice.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>© 2026 mental.md · Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
+            <p style="margin-top: 8px; font-size: 12px;">Information based on DSM-5 criteria and clinical guidelines. This is not medical advice. If you're in crisis, call 988.</p>
+        </div>
+    </footer>
+</body>
+</html>

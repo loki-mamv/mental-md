@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Mental Health Help — Therapists, Psychiatrists & Affordable Care</title>
+    <meta name="description" content="How to find mental health care including therapists, psychiatrists, and affordable options. Navigate insurance, understand provider types, and access treatment.">
+    <link rel="canonical" href="https://mental.md/finding-help.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%235b21b6' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #7c3aed;
+            --accent-dark: #5b21b6;
+            --accent-light: #ede9fe;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .logo span { color: var(--accent); }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--accent); }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 120px 24px 64px;
+        }
+        .page-header {
+            margin-bottom: 48px;
+        }
+        .page-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .page-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 48px;
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        h3 {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+        p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        .provider-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+        .provider-card h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .provider-card p:last-child {
+            margin-bottom: 0;
+        }
+        .provider-meta {
+            display: flex;
+            gap: 16px;
+            margin: 12px 0;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 32px 0;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .comparison-table thead {
+            background: var(--bg-secondary);
+        }
+        .comparison-table th {
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border);
+        }
+        .comparison-table td {
+            padding: 12px 16px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin: 24px 0;
+        }
+        .resource-card {
+            background: var(--bg-tertiary);
+            border-radius: 12px;
+            padding: 20px;
+        }
+        .resource-card h4 {
+            font-family: var(--font-display);
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .resource-card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+        .resource-card a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        .resource-card a:hover {
+            text-decoration: underline;
+        }
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .info-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            font-size: 17px;
+        }
+        .info-box p {
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        .step-list {
+            counter-reset: step;
+            list-style: none;
+            margin-left: 0;
+        }
+        .step-list li {
+            position: relative;
+            padding-left: 48px;
+            margin-bottom: 24px;
+        }
+        .step-list li::before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            width: 32px;
+            height: 32px;
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+            margin-top: 80px;
+        }
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            main { padding: 100px 16px 40px; }
+            .resource-grid { grid-template-columns: 1fr; }
+            .comparison-table { font-size: 12px; }
+            .comparison-table th, .comparison-table td { padding: 8px 10px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">mental<span>.md</span></a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/conditions.html">Conditions</a>
+                <a href="/therapy.html">Therapy</a>
+                <a href="/self-care.html">Self-Care</a>
+                <a href="/crisis.html">Crisis Help</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="page-eyebrow">Access Care</div>
+            <h1>How to Find Mental Health Help</h1>
+            <p class="page-subtitle">Finding mental health care can feel overwhelming. This guide walks you through the process—from understanding provider types to navigating insurance and finding affordable options.</p>
+        </div>
+
+        <section class="section">
+            <h2>Step-by-Step Guide</h2>
+            <ol class="step-list">
+                <li>
+                    <strong>Determine what you need</strong><br>
+                    Are you looking for therapy (talk therapy), medication management, or both? Do you need help with a specific condition? This helps narrow down provider type.
+                </li>
+                <li>
+                    <strong>Check your insurance</strong><br>
+                    Call the number on your insurance card and ask for a list of in-network mental health providers. Most plans are required to cover mental health services at parity with medical services.
+                </li>
+                <li>
+                    <strong>Search provider directories</strong><br>
+                    Use databases like Psychology Today, Zencare, or SAMHSA's treatment locator to find providers by specialty, insurance, and location.
+                </li>
+                <li>
+                    <strong>Schedule consultations</strong><br>
+                    Many therapists offer free 15-minute phone consultations. Use this to assess fit—do you feel comfortable? Do they have experience with your concerns?
+                </li>
+                <li>
+                    <strong>Give it a few sessions</strong><br>
+                    It takes 3-4 sessions to know if a therapist is right for you. If it's not working after a month, it's okay to try someone else.
+                </li>
+            </ol>
+        </section>
+
+        <section class="section">
+            <h2>Types of Mental Health Providers</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Provider</th>
+                        <th>Credentials</th>
+                        <th>Can Prescribe?</th>
+                        <th>Typical Focus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Psychiatrist</strong></td>
+                        <td>MD/DO + residency</td>
+                        <td>Yes</td>
+                        <td>Medication management, complex cases</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Psychologist</strong></td>
+                        <td>PhD/PsyD</td>
+                        <td>No*</td>
+                        <td>Therapy, psychological testing</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LCSW</strong></td>
+                        <td>Master's + licensure</td>
+                        <td>No</td>
+                        <td>Therapy, case management</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LPC/LMHC</strong></td>
+                        <td>Master's + licensure</td>
+                        <td>No</td>
+                        <td>Therapy (various approaches)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PMHNP</strong></td>
+                        <td>NP with psych specialty</td>
+                        <td>Yes</td>
+                        <td>Medication + some therapy</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PCP</strong></td>
+                        <td>MD/DO/NP/PA</td>
+                        <td>Yes</td>
+                        <td>Initial prescribing, referrals</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="font-size: 13px; color: var(--text-muted);">*Psychologists can prescribe in a few states (LA, NM, IL, IA, ID). LCSW = Licensed Clinical Social Worker. LPC = Licensed Professional Counselor. PMHNP = Psychiatric Mental Health Nurse Practitioner.</p>
+        </section>
+
+        <section class="section">
+            <h2>Where to Search</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h4>🔍 Psychology Today</h4>
+                    <p>Largest therapist directory. Filter by issue, insurance, location, specialty.</p>
+                    <a href="https://www.psychologytoday.com/us/therapists" target="_blank" rel="noopener">Search Therapists →</a>
+                </div>
+                <div class="resource-card">
+                    <h4>🏥 SAMHSA Locator</h4>
+                    <p>Find treatment facilities, community mental health centers, support groups.</p>
+                    <a href="https://findtreatment.samhsa.gov" target="_blank" rel="noopener">Find Treatment →</a>
+                </div>
+                <div class="resource-card">
+                    <h4>✨ Zencare</h4>
+                    <p>Curated therapist profiles with video introductions. Focus on fit.</p>
+                    <a href="https://www.zencare.co" target="_blank" rel="noopener">Browse Therapists →</a>
+                </div>
+                <div class="resource-card">
+                    <h4>🧠 NAMI</h4>
+                    <p>Local support groups, education programs, advocacy. Great peer support.</p>
+                    <a href="https://www.nami.org/Support-Education" target="_blank" rel="noopener">Find Support →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Affordable Options</h2>
+            <p>Cost shouldn't be a barrier to mental health care. Here are options if you're uninsured or underinsured:</p>
+            
+            <div class="provider-card">
+                <h3>🏛️ Community Mental Health Centers</h3>
+                <p>Federally funded centers that provide services on a sliding scale based on income. No one is turned away for inability to pay.</p>
+                <p><a href="https://findtreatment.samhsa.gov" style="color: var(--accent);">Find a center near you →</a></p>
+            </div>
+            
+            <div class="provider-card">
+                <h3>🎓 University Training Clinics</h3>
+                <p>Psychology and counseling programs offer low-cost therapy ($10-50/session) provided by supervised graduate students. Quality is often excellent.</p>
+            </div>
+            
+            <div class="provider-card">
+                <h3>💻 Online Therapy Platforms</h3>
+                <p>BetterHelp, Talkspace, and Cerebral offer subscriptions around $60-100/week. More affordable than traditional therapy and convenient.</p>
+            </div>
+            
+            <div class="provider-card">
+                <h3>🤝 Open Path Collective</h3>
+                <p>Network of therapists offering sessions at $30-80. One-time $65 membership fee.</p>
+                <p><a href="https://openpathcollective.org" style="color: var(--accent);">Join Open Path →</a></p>
+            </div>
+            
+            <div class="provider-card">
+                <h3>💼 Employee Assistance Programs (EAP)</h3>
+                <p>Many employers offer free confidential counseling (typically 3-8 sessions). Check with HR—this is often underutilized.</p>
+            </div>
+            
+            <div class="provider-card">
+                <h3>📉 Sliding Scale</h3>
+                <p>Many private practice therapists offer reduced rates based on income. Always ask—therapists often reserve spots for this.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Navigating Insurance</h2>
+            <h3>Know Your Coverage</h3>
+            <ul>
+                <li><strong>In-network vs. out-of-network:</strong> In-network providers have negotiated rates with your insurer. Out-of-network often costs more but gives more choice.</li>
+                <li><strong>Deductible:</strong> Amount you pay before insurance kicks in. Mental health may have a separate deductible.</li>
+                <li><strong>Copay/coinsurance:</strong> Your share after meeting the deductible (e.g., $30/session or 20% of cost).</li>
+                <li><strong>Prior authorization:</strong> Some plans require approval before starting treatment. Ask your provider to handle this.</li>
+            </ul>
+            
+            <h3>Using Out-of-Network Benefits</h3>
+            <p>If you can't find an in-network provider you like, you may still get partial reimbursement for out-of-network care. Ask your therapist for a "superbill" (itemized receipt) and submit it to your insurance for reimbursement.</p>
+            
+            <div class="info-box">
+                <h3>💡 Mental Health Parity</h3>
+                <p>Federal law requires most health plans to cover mental health services at the same level as medical services. If your plan has good medical coverage but poor mental health coverage, this may be a violation. You can file a complaint with your state insurance commissioner.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Telehealth Options</h2>
+            <p>Online therapy has expanded access significantly. It's especially useful if you:</p>
+            <ul>
+                <li>Live in a rural area with few local providers</li>
+                <li>Have mobility or transportation challenges</li>
+                <li>Have a busy schedule that makes office visits difficult</li>
+                <li>Prefer the comfort and privacy of your own space</li>
+            </ul>
+            
+            <p><strong>Research shows:</strong> Telehealth therapy is as effective as in-person therapy for most conditions, including depression and anxiety.</p>
+            
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h4>BetterHelp</h4>
+                    <p>~$65-100/week. Messaging + live sessions. Large therapist network.</p>
+                    <a href="https://www.betterhelp.com" target="_blank" rel="noopener">Learn more →</a>
+                </div>
+                <div class="resource-card">
+                    <h4>Talkspace</h4>
+                    <p>~$65-100/week. Text, audio, video. Psychiatry available.</p>
+                    <a href="https://www.talkspace.com" target="_blank" rel="noopener">Learn more →</a>
+                </div>
+                <div class="resource-card">
+                    <h4>Cerebral</h4>
+                    <p>~$85-325/month. Focus on medication management + therapy.</p>
+                    <a href="https://www.cerebral.com" target="_blank" rel="noopener">Learn more →</a>
+                </div>
+                <div class="resource-card">
+                    <h4>Your regular therapist</h4>
+                    <p>Many in-person therapists now offer video sessions. Just ask.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>What to Expect in Your First Session</h2>
+            <ul>
+                <li><strong>Paperwork:</strong> You'll fill out forms about your history, symptoms, and goals</li>
+                <li><strong>Questions:</strong> The therapist will ask about what brings you in, your background, and what you hope to achieve</li>
+                <li><strong>Assessment:</strong> They may use questionnaires to assess symptoms (PHQ-9 for depression, GAD-7 for anxiety)</li>
+                <li><strong>Discussion:</strong> You'll talk about their approach and whether it's a good fit</li>
+                <li><strong>Plan:</strong> You'll discuss session frequency and initial goals</li>
+            </ul>
+            
+            <p><strong>It's okay if you don't click immediately.</strong> Finding the right therapist can take a few tries. What matters most is that you feel heard, respected, and hopeful about the work.</p>
+        </section>
+
+        <div class="info-box">
+            <h3>🎯 Take the First Step</h3>
+            <p>The hardest part is starting. Pick one action from this page—look up one provider, call your insurance, or schedule one consultation. You don't have to have it all figured out. Just take one step today.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>© 2026 mental.md · Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
+            <p style="margin-top: 8px; font-size: 12px;">Help is available. If you're in crisis, call 988 (Suicide & Crisis Lifeline).</p>
+        </div>
+    </footer>
+</body>
+</html>

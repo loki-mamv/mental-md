@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Therapy — CBT, DBT, EMDR & More Explained</title>
+    <meta name="description" content="Compare different types of therapy including CBT, DBT, EMDR, and psychodynamic therapy. Learn which approach works best for different mental health conditions.">
+    <link rel="canonical" href="https://mental.md/therapy.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%235b21b6' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #7c3aed;
+            --accent-dark: #5b21b6;
+            --accent-light: #ede9fe;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .logo span { color: var(--accent); }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--accent); }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 120px 24px 64px;
+        }
+        .page-header {
+            margin-bottom: 48px;
+        }
+        .page-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .page-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 48px;
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        h3 {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+        p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        .therapy-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+        .therapy-card h3 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+        .therapy-card p:last-child {
+            margin-bottom: 0;
+        }
+        .therapy-meta {
+            display: flex;
+            gap: 24px;
+            margin: 16px 0;
+            padding: 12px 16px;
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        .therapy-meta span {
+            color: var(--text-secondary);
+        }
+        .therapy-meta strong {
+            color: var(--text-primary);
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 32px 0;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .comparison-table thead {
+            background: var(--bg-secondary);
+        }
+        .comparison-table th {
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border);
+        }
+        .comparison-table td {
+            padding: 12px 16px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .info-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            font-size: 17px;
+        }
+        .info-box p {
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+            margin-top: 80px;
+        }
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            main { padding: 100px 16px 40px; }
+            .therapy-meta { flex-direction: column; gap: 8px; }
+            .comparison-table { font-size: 12px; }
+            .comparison-table th, .comparison-table td { padding: 8px 10px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">mental<span>.md</span></a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/conditions.html">Conditions</a>
+                <a href="/therapy.html">Therapy</a>
+                <a href="/self-care.html">Self-Care</a>
+                <a href="/crisis.html">Crisis Help</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="page-eyebrow">Treatment Guide</div>
+            <h1>Types of Therapy Explained</h1>
+            <p class="page-subtitle">Psychotherapy (talk therapy) is a proven treatment for mental health conditions. Different approaches work better for different issues. Understanding your options helps you find the right fit.</p>
+        </div>
+
+        <section class="section">
+            <h2>Therapy at a Glance</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Focus</th>
+                        <th>Best For</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>CBT</strong></td>
+                        <td>Thoughts → Feelings → Behaviors</td>
+                        <td>Depression, anxiety, phobias</td>
+                        <td>12-20 sessions</td>
+                    </tr>
+                    <tr>
+                        <td><strong>DBT</strong></td>
+                        <td>Emotion regulation, distress tolerance</td>
+                        <td>BPD, self-harm, emotional dysregulation</td>
+                        <td>6-12 months</td>
+                    </tr>
+                    <tr>
+                        <td><strong>EMDR</strong></td>
+                        <td>Processing traumatic memories</td>
+                        <td>PTSD, trauma</td>
+                        <td>6-12 sessions</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Psychodynamic</strong></td>
+                        <td>Unconscious patterns, early experiences</td>
+                        <td>Complex issues, personality</td>
+                        <td>Months to years</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ACT</strong></td>
+                        <td>Acceptance, values-based living</td>
+                        <td>Anxiety, chronic pain, depression</td>
+                        <td>8-16 sessions</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section">
+            <h2>Cognitive Behavioral Therapy (CBT)</h2>
+            <div class="therapy-card">
+                <h3>The Most Researched Therapy</h3>
+                <div class="therapy-meta">
+                    <span><strong>Evidence:</strong> 500+ RCTs</span>
+                    <span><strong>Format:</strong> Individual or group</span>
+                    <span><strong>Sessions:</strong> 12-20 typical</span>
+                </div>
+                <p>CBT is based on the idea that thoughts, feelings, and behaviors are interconnected. By identifying and changing negative thought patterns, you can improve how you feel and act.</p>
+                
+                <h3>How It Works</h3>
+                <ul>
+                    <li><strong>Identify automatic thoughts:</strong> Notice negative or distorted thinking patterns</li>
+                    <li><strong>Challenge cognitive distortions:</strong> Test whether thoughts are accurate</li>
+                    <li><strong>Behavioral experiments:</strong> Try new behaviors to test beliefs</li>
+                    <li><strong>Homework assignments:</strong> Practice skills between sessions</li>
+                </ul>
+                
+                <p><strong>Effectiveness:</strong> CBT has response rates of 50-80% for depression and anxiety. Effects are durable—skills learned tend to persist after therapy ends, with lower relapse rates than medication alone.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Dialectical Behavior Therapy (DBT)</h2>
+            <div class="therapy-card">
+                <h3>Skills-Based Emotion Regulation</h3>
+                <div class="therapy-meta">
+                    <span><strong>Developed for:</strong> Borderline PD</span>
+                    <span><strong>Format:</strong> Individual + group skills</span>
+                    <span><strong>Duration:</strong> 6-12 months</span>
+                </div>
+                <p>DBT combines CBT techniques with concepts from Zen Buddhism. It was developed specifically for people who experience emotions very intensely and struggle with self-destructive behaviors.</p>
+                
+                <h3>Four Core Skill Modules</h3>
+                <ul>
+                    <li><strong>Mindfulness:</strong> Present-moment awareness, observing without judgment</li>
+                    <li><strong>Distress Tolerance:</strong> Surviving crises without making them worse</li>
+                    <li><strong>Emotion Regulation:</strong> Understanding and managing intense emotions</li>
+                    <li><strong>Interpersonal Effectiveness:</strong> Communicating needs while maintaining relationships</li>
+                </ul>
+                
+                <p><strong>Best for:</strong> Borderline personality disorder, chronic suicidality, self-harm, eating disorders, substance use with emotional dysregulation.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>EMDR (Eye Movement Desensitization & Reprocessing)</h2>
+            <div class="therapy-card">
+                <h3>Trauma Processing Through Bilateral Stimulation</h3>
+                <div class="therapy-meta">
+                    <span><strong>Evidence:</strong> WHO recommended</span>
+                    <span><strong>Format:</strong> Individual</span>
+                    <span><strong>Sessions:</strong> 6-12 typical</span>
+                </div>
+                <p>EMDR helps process traumatic memories by combining recall of distressing events with bilateral stimulation (typically eye movements). This appears to help the brain reprocess traumatic memories so they become less distressing.</p>
+                
+                <h3>Eight Phases</h3>
+                <ol>
+                    <li>History taking and treatment planning</li>
+                    <li>Preparation (coping skills, explaining the process)</li>
+                    <li>Assessment (identifying target memory)</li>
+                    <li>Desensitization (processing with bilateral stimulation)</li>
+                    <li>Installation (strengthening positive beliefs)</li>
+                    <li>Body scan (checking for residual tension)</li>
+                    <li>Closure (returning to calm)</li>
+                    <li>Reevaluation (reviewing progress)</li>
+                </ol>
+                
+                <p><strong>Key research:</strong> EMDR is as effective as trauma-focused CBT for PTSD, with some studies suggesting faster results. Recognized by the WHO, APA, and VA as a first-line PTSD treatment.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Psychodynamic Therapy</h2>
+            <div class="therapy-card">
+                <h3>Understanding Unconscious Patterns</h3>
+                <div class="therapy-meta">
+                    <span><strong>Based on:</strong> Psychoanalytic theory</span>
+                    <span><strong>Format:</strong> Individual</span>
+                    <span><strong>Duration:</strong> Months to years</span>
+                </div>
+                <p>Psychodynamic therapy explores how unconscious thoughts, early experiences, and relationship patterns influence current feelings and behaviors. It aims for deep self-understanding and lasting personality change.</p>
+                
+                <h3>Key Concepts</h3>
+                <ul>
+                    <li><strong>Unconscious processes:</strong> Thoughts and feelings outside awareness that influence behavior</li>
+                    <li><strong>Defense mechanisms:</strong> Unconscious strategies to protect from anxiety</li>
+                    <li><strong>Transference:</strong> Projecting feelings from past relationships onto the therapist</li>
+                    <li><strong>Free association:</strong> Speaking freely to uncover unconscious material</li>
+                </ul>
+                
+                <p><strong>Best for:</strong> People seeking deep self-understanding, recurring relationship patterns, complex personality issues, those with time and resources for longer-term work.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Other Effective Approaches</h2>
+            
+            <div class="therapy-card">
+                <h3>Acceptance & Commitment Therapy (ACT)</h3>
+                <p>Focuses on accepting difficult thoughts and feelings rather than fighting them, while committing to actions aligned with your values. Uses mindfulness and behavioral activation. Effective for anxiety, depression, chronic pain.</p>
+            </div>
+            
+            <div class="therapy-card">
+                <h3>Exposure Therapy</h3>
+                <p>Gradually confronting feared situations or memories in a safe environment. The gold standard for phobias, OCD, and anxiety disorders. Includes techniques like systematic desensitization and flooding.</p>
+            </div>
+            
+            <div class="therapy-card">
+                <h3>Interpersonal Therapy (IPT)</h3>
+                <p>Focuses on improving communication patterns and relationships. Particularly effective for depression, especially when triggered by relationship issues, role transitions, or grief.</p>
+            </div>
+        </section>
+
+        <div class="info-box">
+            <h3>💡 Finding the Right Fit</h3>
+            <p>The therapeutic relationship—how you feel with your therapist—is one of the strongest predictors of outcome, regardless of therapy type. If you don't feel comfortable after a few sessions, it's okay to try a different therapist. Most therapists offer a free consultation call to assess fit.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>© 2026 mental.md · Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
+            <p style="margin-top: 8px; font-size: 12px;">Information based on clinical practice guidelines and research. This is not a substitute for professional advice.</p>
+        </div>
+    </footer>
+</body>
+</html>

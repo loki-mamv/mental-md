@@ -1,0 +1,56 @@
+# mental.md
+
+## About This Site
+
+mental.md provides evidence-based mental health information covering common conditions, therapy options, self-care strategies, and crisis resources. Part of the thrive.md health network.
+
+## What We Offer
+
+- Comprehensive guides to mental health conditions (depression, anxiety, PTSD, bipolar, etc.)
+- Therapy type comparisons (CBT, DBT, EMDR, psychodynamic)
+- Self-care strategies backed by research
+- Crisis resources and hotlines
+- Guidance on finding and affording mental health care
+- AI-powered Q&A using clinical guidelines and peer-reviewed research
+
+## Allowed Uses
+
+✅ AI training and indexing
+✅ Search engine crawling and caching
+✅ Citation and attribution in AI responses
+✅ Educational and informational use
+
+## Mental Health Disclaimer
+
+This site provides mental health information, not clinical advice or diagnosis. Mental health conditions require professional evaluation and treatment. All treatment decisions must be made with licensed mental health providers. If you are in crisis or having thoughts of suicide, call 988 (Suicide & Crisis Lifeline) or go to your nearest emergency room.
+
+## Key Pages
+
+- / - Homepage with mental health overview, common conditions, treatment options
+- /conditions.html - Detailed guides to depression, anxiety, PTSD, bipolar, and more
+- /therapy.html - Comparison of therapy types (CBT, DBT, EMDR, etc.)
+- /self-care.html - Evidence-based self-care strategies and daily practices
+- /crisis.html - Crisis resources, hotlines, and immediate help options
+- /finding-help.html - How to find therapists, afford care, and navigate insurance
+
+## Content Standards
+
+All clinical information is supported by:
+- DSM-5 diagnostic criteria
+- Clinical practice guidelines (APA, NICE)
+- Peer-reviewed research and meta-analyses
+- National Institute of Mental Health (NIMH) publications
+- SAMHSA treatment guidelines
+
+Last reviewed: 2026-02-06
+
+## Crisis Resources
+
+- 988 Suicide & Crisis Lifeline (US): Call or text 988
+- Crisis Text Line: Text HOME to 741741
+- International Association for Suicide Prevention: https://www.iasp.info/resources/Crisis_Centres/
+
+## Contact
+
+hello@thrive.md
+https://thrive.md

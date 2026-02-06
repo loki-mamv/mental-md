@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crisis Resources — Immediate Help for Mental Health Emergencies</title>
+    <meta name="description" content="Immediate crisis resources for mental health emergencies. 24/7 suicide prevention hotlines, crisis text lines, and emergency mental health support worldwide.">
+    <link rel="canonical" href="https://mental.md/crisis.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%235b21b6' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #7c3aed;
+            --accent-dark: #5b21b6;
+            --accent-light: #ede9fe;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .logo span { color: var(--accent); }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--accent); }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 120px 24px 64px;
+        }
+        .page-header {
+            margin-bottom: 48px;
+        }
+        .page-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: #dc2626;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .page-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 48px;
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        h3 {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+        p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        .crisis-card {
+            background: #fef2f2;
+            border: 2px solid #fecaca;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .crisis-card.primary {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            border: none;
+            color: white;
+        }
+        .crisis-card.primary h3,
+        .crisis-card.primary p,
+        .crisis-card.primary .crisis-number {
+            color: white;
+        }
+        .crisis-card h3 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #991b1b;
+        }
+        .crisis-number {
+            font-family: var(--font-display);
+            font-size: 48px;
+            font-weight: 700;
+            color: #dc2626;
+            margin: 16px 0;
+            letter-spacing: 2px;
+        }
+        .crisis-card p {
+            font-size: 15px;
+            color: #7f1d1d;
+            margin-bottom: 0;
+        }
+        .crisis-btn {
+            display: inline-block;
+            background: white;
+            color: #dc2626;
+            padding: 12px 32px;
+            border-radius: 100px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            margin-top: 16px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .crisis-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin: 24px 0;
+        }
+        .resource-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+        }
+        .resource-card h4 {
+            font-family: var(--font-display);
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .resource-card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+        .resource-card a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        .resource-card a:hover {
+            text-decoration: underline;
+        }
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .warning-signs {
+            background: #fef3c7;
+            border: 1px solid #fcd34d;
+            border-left: 4px solid #f59e0b;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .warning-signs h3 {
+            color: #92400e;
+            margin-top: 0;
+        }
+        .warning-signs ul {
+            margin-bottom: 0;
+        }
+        .warning-signs li {
+            color: #78350f;
+        }
+        .info-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            font-size: 17px;
+        }
+        .info-box p {
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+            margin-top: 80px;
+        }
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            main { padding: 100px 16px 40px; }
+            .resource-grid { grid-template-columns: 1fr; }
+            .crisis-number { font-size: 36px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">mental<span>.md</span></a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/conditions.html">Conditions</a>
+                <a href="/therapy.html">Therapy</a>
+                <a href="/self-care.html">Self-Care</a>
+                <a href="/crisis.html">Crisis Help</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="page-eyebrow">🆘 Immediate Help</div>
+            <h1>Crisis Resources</h1>
+            <p class="page-subtitle">If you or someone you know is in crisis, help is available 24/7. You don't have to face this alone. Reach out now—trained counselors are ready to help.</p>
+        </div>
+
+        <section class="section">
+            <div class="crisis-card primary">
+                <h3>988 Suicide & Crisis Lifeline</h3>
+                <div class="crisis-number">988</div>
+                <p>Free, confidential support 24/7. Call or text from anywhere in the United States.</p>
+                <a href="tel:988" class="crisis-btn">Call 988 Now</a>
+            </div>
+            
+            <div class="resource-grid">
+                <div class="crisis-card">
+                    <h3>💬 Crisis Text Line</h3>
+                    <div class="crisis-number" style="font-size: 24px;">Text HOME to 741741</div>
+                    <p>Connect with a trained crisis counselor via text message. Available 24/7.</p>
+                </div>
+                <div class="crisis-card">
+                    <h3>🌐 International Crisis Lines</h3>
+                    <div class="crisis-number" style="font-size: 18px;">Find Help Worldwide</div>
+                    <p>Access crisis centers in your country through IASP.</p>
+                    <a href="https://www.iasp.info/resources/Crisis_Centres/" target="_blank" rel="noopener" style="color: #dc2626; font-weight: 600;">Find Your Country →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Specialized Crisis Lines</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h4>🏳️‍🌈 Trevor Project</h4>
+                    <p>LGBTQ+ youth crisis support</p>
+                    <p><strong>Call:</strong> 1-866-488-7386</p>
+                    <p><strong>Text:</strong> START to 678-678</p>
+                    <a href="https://www.thetrevorproject.org" target="_blank" rel="noopener">Website →</a>
+                </div>
+                <div class="resource-card">
+                    <h4>🎖️ Veterans Crisis Line</h4>
+                    <p>Support for veterans & service members</p>
+                    <p><strong>Call:</strong> 988, then press 1</p>
+                    <p><strong>Text:</strong> 838255</p>
+                    <a href="https://www.veteranscrisisline.net" target="_blank" rel="noopener">Website →</a>
+                </div>
+                <div class="resource-card">
+                    <h4>🧒 Childhelp National Hotline</h4>
+                    <p>Child abuse prevention & support</p>
+                    <p><strong>Call:</strong> 1-800-422-4453</p>
+                    <p>Available 24/7, 120+ languages</p>
+                    <a href="https://www.childhelp.org" target="_blank" rel="noopener">Website →</a>
+                </div>
+                <div class="resource-card">
+                    <h4>🏠 National Domestic Violence</h4>
+                    <p>Abuse, relationship violence support</p>
+                    <p><strong>Call:</strong> 1-800-799-7233</p>
+                    <p><strong>Text:</strong> START to 88788</p>
+                    <a href="https://www.thehotline.org" target="_blank" rel="noopener">Website →</a>
+                </div>
+                <div class="resource-card">
+                    <h4>🍽️ NEDA Eating Disorders</h4>
+                    <p>Eating disorder support & resources</p>
+                    <p><strong>Call:</strong> 1-800-931-2237</p>
+                    <p><strong>Text:</strong> NEDA to 741741</p>
+                    <a href="https://www.nationaleatingdisorders.org" target="_blank" rel="noopener">Website →</a>
+                </div>
+                <div class="resource-card">
+                    <h4>🧠 SAMHSA Helpline</h4>
+                    <p>Substance abuse & mental health</p>
+                    <p><strong>Call:</strong> 1-800-662-4357</p>
+                    <p>Free treatment referrals 24/7</p>
+                    <a href="https://www.samhsa.gov/find-help/national-helpline" target="_blank" rel="noopener">Website →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="warning-signs">
+                <h3>⚠️ Warning Signs of a Crisis</h3>
+                <p style="color: #78350f; margin-bottom: 12px;">Take these signs seriously—in yourself or others:</p>
+                <ul>
+                    <li>Talking about wanting to die or kill oneself</li>
+                    <li>Looking for ways to harm oneself (searching online, acquiring means)</li>
+                    <li>Talking about feeling hopeless or having no reason to live</li>
+                    <li>Talking about being a burden to others</li>
+                    <li>Increasing use of alcohol or drugs</li>
+                    <li>Acting anxious, agitated, or reckless</li>
+                    <li>Withdrawing from family and friends</li>
+                    <li>Extreme mood swings</li>
+                    <li>Giving away prized possessions</li>
+                    <li>Saying goodbye as if they won't be seen again</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>How to Help Someone in Crisis</h2>
+            <p>If you're concerned about someone:</p>
+            <ol>
+                <li><strong>Ask directly:</strong> "Are you thinking about suicide?" Research shows asking doesn't plant the idea—it opens the door for help.</li>
+                <li><strong>Listen without judgment:</strong> Let them express their feelings. Don't argue or dismiss their pain.</li>
+                <li><strong>Stay with them:</strong> Don't leave them alone if they're in immediate danger.</li>
+                <li><strong>Remove access to means:</strong> If possible, remove firearms, medications, or other lethal means.</li>
+                <li><strong>Help them connect:</strong> Call a crisis line together, or take them to an emergency room.</li>
+                <li><strong>Follow up:</strong> Check in regularly after the crisis has passed.</li>
+            </ol>
+            
+            <div class="info-box">
+                <h3>🚨 Call 911 If:</h3>
+                <p>There is immediate danger of harm—the person has a weapon, has taken pills or other substances, or is actively attempting to harm themselves. Stay with them until help arrives.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>After a Crisis</h2>
+            <p>Crisis intervention is just the first step. Following a mental health crisis:</p>
+            <ul>
+                <li><strong>Follow up with treatment:</strong> Connect with a therapist, psychiatrist, or your primary care doctor</li>
+                <li><strong>Create a safety plan:</strong> Work with a professional to identify warning signs, coping strategies, and emergency contacts</li>
+                <li><strong>Build your support system:</strong> Let trusted people know you're struggling so they can check in</li>
+                <li><strong>Reduce access to means:</strong> Safely store or remove items that could be used for self-harm</li>
+                <li><strong>Be patient with recovery:</strong> Healing takes time. Crises can recur, but each time you build more coping skills</li>
+            </ul>
+        </section>
+
+        <div class="info-box">
+            <h3>💜 You Matter</h3>
+            <p>Reaching out for help is a sign of strength, not weakness. Whatever you're facing, there are people who want to help. Crisis counselors, therapists, and support groups exist because people care. Your life has value, and recovery is possible.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>© 2026 mental.md · Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
+            <p style="margin-top: 8px; font-size: 12px;">If you are in immediate danger, call 911 or go to your nearest emergency room.</p>
+        </div>
+    </footer>
+</body>
+</html>
