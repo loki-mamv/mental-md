@@ -1320,6 +1320,7 @@
                 
                 const reader = res.body.getReader();
                 const decoder = new TextDecoder();
+                let fullResponse = '';
                 let fullText = '';
                 let displayedText = '';
                 let renderQueue = [];
