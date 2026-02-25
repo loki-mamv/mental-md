@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://mental.md/blog/workplace-mental-health/#article"},
           "wordCount": "688",
           "lastReviewed": "2026-02-20",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Can I get fired for having a mental health condition?", "acceptedAnswer": {"@type": "Answer", "text": "Not legally. The ADA prohibits termination based on mental health diagnoses. However, you can be held to the same performance standards as other employees. If your condition affects performance, the legal obligation is for your employer to explore reasonable accommodations before taking adverse action. Documenting everything is important."}}, {"@type": "Question", "name": "Should I tell my boss about my depression?", "acceptedAnswer": {"@type": "Answer", "text": "You're not required to unless you need accommodations. If your boss is trustworthy and the culture is supportive, disclosure can lead to helpful adjustments. If the environment is hostile or your manager has demonstrated stigmatizing attitudes, you can request accommodations through HR without disclosing to your direct supervisor."}}, {"@type": "Question", "name": "What's the difference between burnout and depression?", "acceptedAnswer": {"@type": "Answer", "text": "Burnout is context-specific \u2014 it's tied to work demands and improves when those demands change. Depression is pervasive \u2014 it affects all areas of life regardless of circumstances. However, chronic burnout can trigger clinical depression, and the two frequently coexist. If burnout symptoms persist even with reduced work demands, depression screening is warranted."}}, {"@type": "Question", "name": "How many mental health days should I take?", "acceptedAnswer": {"@type": "Answer", "text": "There's no magic number. The point isn't occasional reactive days off (though those help) \u2014 it's sustainable daily and weekly practices that prevent the need for emergency recovery. Regular time off (using your PTO), consistent boundaries, and addressing problems early are more effective than periodic crisis days."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

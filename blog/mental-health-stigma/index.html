@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://mental.md/blog/mental-health-stigma/#article"},
           "wordCount": "647",
           "lastReviewed": "2026-02-19",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Should I tell my employer about my mental health condition?", "acceptedAnswer": {"@type": "Answer", "text": "There's no universal answer. The ADA protects against discrimination for disclosed mental health conditions, but enforcement is imperfect. Consider: Does your workplace culture support disclosure? Do you need accommodations? Is your manager trustworthy? You're never required to disclose unless you're requesting accommodations. If unsure, consult HR or an employment attorney."}}, {"@type": "Question", "name": "How do I deal with self-stigma?", "acceptedAnswer": {"@type": "Answer", "text": "Start by recognizing it: 'The belief that I'm weak for having depression is the stigma talking, not the truth.' Therapy (particularly ACT) helps with this. Connecting with others who share your experience \u2014 support groups, online communities \u2014 counters the isolation that self-stigma thrives on. Remember: seeking help is the opposite of weakness."}}, {"@type": "Question", "name": "Has mental health stigma decreased?", "acceptedAnswer": {"@type": "Answer", "text": "Attitudes toward depression and anxiety have improved significantly since 2000, particularly among younger generations. However, stigma toward 'severe' mental illness (schizophrenia, bipolar) has decreased less. And while more people say they support mental health treatment, behavioral stigma (actually treating someone differently) hasn't declined as much as attitudinal stigma."}}, {"@type": "Question", "name": "Why is mental health still stigmatized?", "acceptedAnswer": {"@type": "Answer", "text": "Multiple factors: media misrepresentation (linking mental illness to violence), the invisibility of mental illness (making it easier to disbelieve), cultural values of self-reliance, pharmaceutical marketing that emphasizes 'chemical imbalance' framing (which can increase stigma by suggesting permanence), and the simple human tendency to fear what's not understood."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

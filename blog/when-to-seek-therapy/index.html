@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://mental.md/blog/when-to-seek-therapy/#article"},
           "wordCount": "693",
           "lastReviewed": "2026-02-17",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "How do I know if I need a therapist or psychiatrist?", "acceptedAnswer": {"@type": "Answer", "text": "Therapists provide talk therapy (psychologists, licensed counselors, social workers). Psychiatrists are medical doctors who primarily manage medication. Many people benefit from both. If you think you might need medication (for depression, anxiety, bipolar, etc.), a psychiatrist is appropriate. For therapy, any licensed mental health professional with relevant training works."}}, {"@type": "Question", "name": "Is it normal to feel worse after starting therapy?", "acceptedAnswer": {"@type": "Answer", "text": "Sometimes, briefly. Therapy involves confronting difficult thoughts, memories, and patterns \u2014 which can increase distress temporarily before it improves. This is particularly true in trauma therapy and grief work. If you feel consistently worse after several sessions, discuss it with your therapist \u2014 the approach may need adjustment."}}, {"@type": "Question", "name": "How long does therapy take?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the condition and goals. Brief, structured therapies (CBT for anxiety or depression) typically run 12-20 sessions. Trauma processing may take 8-15 sessions. Complex issues (personality patterns, relational difficulties, C-PTSD) may benefit from longer-term work. Some people do periodic 'tune-up' courses throughout their lives."}}, {"@type": "Question", "name": "Can I do therapy online?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Telehealth therapy is well-studied and produces outcomes comparable to in-person therapy for most conditions. It's particularly convenient for people in rural areas, those with mobility issues, or those with busy schedules. Some conditions (severe dissociative disorders, active psychosis) may be better suited to in-person care."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

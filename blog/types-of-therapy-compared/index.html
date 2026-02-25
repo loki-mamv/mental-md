@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://mental.md/blog/types-of-therapy-compared/#article"},
           "wordCount": "794",
           "lastReviewed": "2026-02-18",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Which type of therapy is most effective?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the condition. CBT has the broadest evidence base across conditions. ERP is the clear winner for OCD. EMDR and PE lead for PTSD. DBT is gold standard for borderline personality disorder. For many conditions, different modalities produce similar outcomes \u2014 the therapeutic alliance and your engagement matter as much as the specific technique."}}, {"@type": "Question", "name": "Can I do more than one type of therapy?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Some people do individual CBT and group DBT simultaneously. Others start with EMDR for trauma processing, then switch to psychodynamic therapy for ongoing pattern exploration. Sequential approaches (addressing acute symptoms first, then deeper patterns) are common and often ideal."}}, {"@type": "Question", "name": "Is online therapy as effective as in-person?", "acceptedAnswer": {"@type": "Answer", "text": "For CBT, the evidence strongly supports equivalent outcomes via telehealth. Other modalities have less telehealth-specific research but are generally considered effective online. Exceptions may include severe dissociative conditions and situations requiring in-person safety assessment."}}, {"@type": "Question", "name": "How do I know if my therapy is working?", "acceptedAnswer": {"@type": "Answer", "text": "Expect some improvement within 6-8 sessions for structured therapies (CBT, EMDR). Signs of progress: reduced symptom frequency/intensity, better functioning, more self-awareness, improved relationships. If nothing has changed after 8-10 sessions, discuss this with your therapist \u2014 the approach, the fit, or both may need adjustment."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

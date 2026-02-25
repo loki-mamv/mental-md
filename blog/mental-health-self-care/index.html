@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://mental.md/blog/mental-health-self-care/#article"},
           "wordCount": "720",
           "lastReviewed": "2026-02-14",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "What is the most important self-care for mental health?", "acceptedAnswer": {"@type": "Answer", "text": "Sleep. Consistently getting 7-9 hours of quality sleep has the largest evidence base for protecting mental health. It affects emotional regulation, cognitive function, stress resilience, and vulnerability to depression and anxiety more than any other single factor."}}, {"@type": "Question", "name": "Is self-care the same as therapy?", "acceptedAnswer": {"@type": "Answer", "text": "No. Self-care is maintenance \u2014 the daily practices that support mental health. Therapy is treatment \u2014 structured intervention for specific conditions. You need both in different contexts. Self-care supports therapy; therapy often teaches better self-care. Neither fully replaces the other."}}, {"@type": "Question", "name": "How do I practice self-care when I'm depressed?", "acceptedAnswer": {"@type": "Answer", "text": "Start very small. Depression makes everything feel impossible, so 'go for a run and call a friend' isn't realistic advice. Can you open the blinds? Can you drink a glass of water? Can you step outside for two minutes? Start there. Behavioral activation \u2014 doing small things despite not wanting to \u2014 is how you build momentum when motivation is absent."}}, {"@type": "Question", "name": "Why do I feel guilty about self-care?", "acceptedAnswer": {"@type": "Answer", "text": "Guilt about self-care often reflects internalized beliefs that your needs aren't valid or that prioritizing yourself is selfish. This is especially common in caregivers, parents, and people who grew up in environments where their needs were dismissed. The guilt is a signal to examine, not a reason to stop."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>
